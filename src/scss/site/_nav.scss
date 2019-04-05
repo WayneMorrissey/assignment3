@@ -1,0 +1,11 @@
+.mobile-nav{
+
+    .nav-items{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 3.5rem;
+        letter-spacing: 1px;
+        @include mont(400);
+        @include textopts(1.125rem);
+    }
+}
