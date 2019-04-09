@@ -24,6 +24,121 @@
         <p class="banner-title"><span class="bold">WELCOME</span> TO AVE</p>
         <p class="banner-tagline">REGISTER TODAY</p>
     </header>
+
+    <form class="registration-form">
+            <form class="registration-form">
+                    <fieldset class="user-info">
+                        <legend>REGISTER</legend>
+            
+                        <label class="user-info-label" for="firstName">First Name</label>
+                        <input class="user-info-input" type="text" name="firstName">
+            
+                        <label class="user-info-label" for="lastName">Last Name</label>
+                        <input class="user-info-input" type="text" name="lastName">
+            
+                        <label class="user-info-label" for="email">Email Address</label>
+                        <input class="user-info-input" type="text" name="email">
+            
+                        <label class="user-info-label" for="password">Your Password</label>
+                        <input class="user-info-input" type="password">
+            
+                        <label class="user-info-label" for="passwordConfirm">Confirm password</label>
+                        <input class="user-info-input" type="password">
+            
+                        <label class="user-info-label" for="emailOccurence">How often would you like an email?</label>
+                        <select class="user-info-input" name="emailOccurence" id="emailOccurence">
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="biweekly">Bi-Weekly</option>
+                            <option value="monthly">Monthly</option>
+                        </select>
+            
+                        <label class="user-info-label" for="phone">Phone Number (optional)</label>
+                        <input class="user-info-input" type="text" name="phone">
+            
+                        <div class="checkbox-div">
+                            <input class="user-info-input toc" type="checkbox" name="toc" >
+                            <label class="user-info-label" for="toc">I agree to the terms and conditions of the website. I may opt out at any time.</label>
+                        </div>
+            
+                        <label class="user-info-label" for="message">Send us a message (optional)</label>
+                        <textarea class="user-info-input" ></textarea>
+                    </fieldset>
+
+                    <fieldset class="contact-type">
+                        <legend>Sign up for</legend>
+                        <div class="signup-checkbox-flex">
+                            <div class="signup-checkbox-div">
+                                <input class="signup-checkbox" type="checkbox" name="updates" id="">
+                                <label class="signup-checkbox-label" for="updates">exclusive updates</label>
+                            </div>
+                            <div class="signup-checkbox-div">
+                                <input class="signup-checkbox" type="checkbox" name="sales">
+                                <label class="signup-checkbox-label" for="sales">discounts/sales</label>
+                            </div>
+                            <div class="signup-checkbox-div">
+                                <input class="signup-checkbox" type="checkbox" name="new">
+                                <label class="signup-checkbox-label" for="new">new arrivals</label>
+                            </div>
+                            <div class="signup-checkbox-div">
+                                <input class="signup-checkbox" type="checkbox" name="contests">
+                                <label class="signup-checkbox-label" for="contests">contests</label>
+                            </div>
+                            <div class="signup-checkbox-div">
+                                <input class="signup-checkbox" type="checkbox" name="everything">
+                                <label class="signup-checkbox-label" for="everything">everything</label>
+                            </div>
+                            <div class="signup-checkbox-div">
+                                <input class="signup-checkbox" type="checkbox" name="coupons">
+                                <label class="signup-checkbox-label" for="coupons">coupons</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="preferences">
+                        <legend>Preferences (optional)</legend>
+                        <div class="pref-select-flex">
+                            <div class="pref-select-div">
+                                <label for="language" class="pref-label">Language</label>
+                                <select name="language" class="pref-select">
+                                    <option value="en">English</option>
+                                    <option value="fr">Francais</option>
+                                    <option value="es">Espanol</option>
+                                    <option value="de">Deutsch</option>
+                                </select>
+                            </div>
+                            <div class="pref-select-div">
+                                <label for="size" class="pref-label">Do you prefer a size of clothing?</label>
+                                <select name="size" class="pref-select">
+                                    <option value="s">Small</option>
+                                    <option value="m">Medium</option>
+                                    <option value="l">Large</option>
+                                    <option value="xl">X-Large</option>
+                                </select>
+                            </div>
+                            <div class="pref-select-div">
+                                <label for="location" class="pref-label">Your Store Location</label>
+                                <select name="location" class="pref-select">
+                                    <option value="edmonton">Edmonton, AB</option>
+                                    <option value="calgary">Calgary, AB</option>
+                                    <option value="vancouver">Vancouver, BC</option>
+                                    <option value="winnipeg">Winnipeg, MB</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="submission">
+                        <div class="submission-div">
+                            <input class="submit-button" type="submit" name="submit" value="CREATE ACCOUNT">
+                            <p class="privacy-policy">By clicking ‘Create Account’, you agree to our <a href="" class="form-link">Privacy Policy <i class="fas fa-long-arrow-alt-right"></i></a></p>
+                            <div class="customer-support">
+                                <p class="support-heading">NEED HELP?</p>
+                                <p class="support-text">If you have questions about your account, please contact <a href="" class="form-link">customer service</a> 24 hours a day, 7 days a week. <span class="support-heading">1-888-555-5555</spa></p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
     
     <script src="js/main.js"></script>
 </body>
