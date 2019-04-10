@@ -165,7 +165,7 @@
 }
 
 /* Desktop break point */
-@media(min-width: 960px) {
+@media(min-width: 1280px) {
 
     .registration-form {
         margin-top: 5rem;
@@ -183,6 +183,12 @@
         .register-fields-wrapper:nth-child(3) {
             flex: 0 0 100%;
         }
+    }
+}
+
+/* tablet break point */
+@media(min-width: 960px){
+    .registration-form {
 
         .submission-div {
             flex-direction: row;
@@ -199,7 +205,7 @@
             flex: 0 0 45%;
         }
 
-        .customer-suppot {
+        .customer-support {
             flex: 0 0 100%;
         }
     }

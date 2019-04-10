@@ -15,7 +15,8 @@
     }
 }
 
-@media (min-width: 960px) {
+/* Desktop break point */
+@media (min-width: 1280px) {
     .site-nav {
         .desktop-nav {
             display: flex;

@@ -1,0 +1,42 @@
+.mobile-sub-menu{
+    position: fixed;
+    top:3rem;
+    background:#fff;
+    padding: 1rem;
+    width:100%;
+    height:14rem;
+    top: -14rem;
+    border-bottom:2px solid $awardbgcolor;
+    @include mont(700);
+    z-index: 2;
+
+
+    h2{
+        color: #fff;
+        background-color: $awardbgcolor;
+        padding: .8rem;
+    }
+
+    .mobile-menu-links a{
+
+        li{
+            padding: .5rem;
+            background-color: #fff;
+            color: $formhighlightcolor;
+            @include mont(400);
+        }
+
+        &:nth-child(even) li{
+            background-color: $awardbgcolor;
+            color: #fff;
+        }
+
+        &:hover{
+            color: $formhighlightcolor;
+        }
+
+        &:nth-child(even):hover{
+            color: #fff;
+        }
+    }
+}
