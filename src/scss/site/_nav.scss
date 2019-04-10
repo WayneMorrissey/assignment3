@@ -1,11 +1,50 @@
-.mobile-nav{
+.site-nav{
+    max-width: 1400px;
+    margin: 0 auto;
 
-    .nav-items{
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav{
         display: flex;
         justify-content: space-between;
         padding: 2rem 3.5rem;
         letter-spacing: 1px;
         @include mont(400);
         @include textopts(1.125rem);
+    }
+}
+
+@media (min-width: 960px) {
+    .site-nav {
+        .desktop-nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem 3.5rem;
+            letter-spacing: 1px;
+            @include mont(400);
+            @include textopts(1.125rem);
+        }
+
+        .branding {
+            margin-right: auto;
+        }
+
+        .nav-link-item{
+            margin-right: 2rem;
+        }
+
+        .nav-link {
+            @include textopts(0.625rem);
+            @include mont(700);
+        }
+
+        .nav-link-item:nth-child(2) > .nav-link {
+            color: $formhighlightcolor;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
     }
 }

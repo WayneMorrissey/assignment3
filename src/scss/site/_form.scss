@@ -2,6 +2,8 @@
 
     padding: 1.75rem;
     @include textopts(.9375rem, $formtextcolor);
+    max-width: 610px;
+    margin: 0 auto;
 
     fieldset {
         display: flex;
@@ -27,6 +29,8 @@
         height: 40px;
         margin-bottom: 1rem;
         border: 1px solid $forminputcolor;
+        padding-left: .25rem;
+        padding-right: .25rem;
     }
 
     .checkbox-div {
@@ -68,8 +72,9 @@
         background-position: right 1rem bottom 8.75px; 
     }
 
-    textarea {
+    .user-info-text {
         height: 11.5rem;
+        resize: none;
     }
 
     .signup-checkbox-flex {
@@ -132,7 +137,7 @@
         @include mont(700);
         height: 60px;
         width: 45%;
-        min-width:180px;
+        min-width:200px;
         letter-spacing: 2px;
     }
 
@@ -151,9 +156,51 @@
 @media(max-width: 555px) {
 
     .registration-form {
+
         .pref-select-div {
             flex: 1 0 100%;
         }
     }
     
+}
+
+/* Desktop break point */
+@media(min-width: 960px) {
+
+    .registration-form {
+        margin-top: 5rem;
+
+        .register-fields {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .register-fields-wrapper {
+            flex: 0 0 calc(50% - 0.625rem);
+        }
+
+        .register-fields-wrapper:nth-child(3) {
+            flex: 0 0 100%;
+        }
+
+        .submission-div {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .submit-button {
+            flex: 0 0 40%;
+        }
+
+        .privacy-policy {
+            flex: 0 0 45%;
+        }
+
+        .customer-suppot {
+            flex: 0 0 100%;
+        }
+    }
 }
